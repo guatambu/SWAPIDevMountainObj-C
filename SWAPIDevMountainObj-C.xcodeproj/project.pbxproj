@@ -13,6 +13,7 @@
 		FA12BB3B20E561C700A597DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA12BB3920E561C700A597DF /* LaunchScreen.storyboard */; };
 		FA12BB3E20E561C700A597DF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA12BB3D20E561C700A597DF /* main.m */; };
 		FA12BB4820E561C700A597DF /* SWAPIDevMountainObj_CTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA12BB4720E561C700A597DF /* SWAPIDevMountainObj_CTests.m */; };
+		FA12BB5A20E568E000A597DF /* MGDStarship.m in Sources */ = {isa = PBXBuildFile; fileRef = FA12BB5920E568E000A597DF /* MGDStarship.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,8 @@
 		FA12BB4320E561C700A597DF /* SWAPIDevMountainObj-CTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SWAPIDevMountainObj-CTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA12BB4720E561C700A597DF /* SWAPIDevMountainObj_CTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWAPIDevMountainObj_CTests.m; sourceTree = "<group>"; };
 		FA12BB4920E561C700A597DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA12BB5820E568E000A597DF /* MGDStarship.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MGDStarship.h; sourceTree = "<group>"; };
+		FA12BB5920E568E000A597DF /* MGDStarship.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MGDStarship.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +114,8 @@
 		FA12BB5320E563CA00A597DF /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				FA12BB5820E568E000A597DF /* MGDStarship.h */,
+				FA12BB5920E568E000A597DF /* MGDStarship.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -249,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA12BB3E20E561C700A597DF /* main.m in Sources */,
+				FA12BB5A20E568E000A597DF /* MGDStarship.m in Sources */,
 				FA12BB3020E561C700A597DF /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
