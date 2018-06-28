@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xIH-Yg-CP0">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Choose your new Starship-->
+        <scene sceneID="mWe-5c-guL">
+            <objects>
+                <tableViewController id="obK-xC-6M8" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" estimatedRowHeight="60" sectionHeaderHeight="28" sectionFooterHeight="28" id="pBT-Yz-xd4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="starshipCell" rowHeight="60" id="rmW-Dy-5Ew">
+                                <rect key="frame" x="0.0" y="28" width="375" height="60"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rmW-Dy-5Ew" id="fbV-q0-0EB">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="59.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nNN-SI-b6y">
+                                            <rect key="frame" x="24" y="15" width="327" height="30"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="(starship name)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qRN-sD-G05">
+                                                    <rect key="frame" x="0.0" y="0.0" width="212" height="30"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                                    <color key="textColor" red="0.50784188509999995" green="0.84911912680000001" blue="0.99967902900000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(HyperDrive: 12.0)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AhL-Gn-gfo">
+                                                    <rect key="frame" x="212" y="0.0" width="115" height="30"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="14"/>
+                                                    <color key="textColor" red="0.50784188509999995" green="0.84911912680000001" blue="0.99967902900000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="nNN-SI-b6y" firstAttribute="centerX" secondItem="fbV-q0-0EB" secondAttribute="centerX" id="C0f-fL-lIK"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="nNN-SI-b6y" secondAttribute="trailing" constant="8" id="EKx-52-GLB"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="nNN-SI-b6y" secondAttribute="bottom" constant="4" id="JjS-BU-edJ"/>
+                                        <constraint firstItem="nNN-SI-b6y" firstAttribute="leading" secondItem="fbV-q0-0EB" secondAttribute="leadingMargin" constant="8" id="eSq-Mj-Gce"/>
+                                        <constraint firstItem="nNN-SI-b6y" firstAttribute="centerY" secondItem="fbV-q0-0EB" secondAttribute="centerY" id="v0C-6a-W2e"/>
+                                        <constraint firstItem="nNN-SI-b6y" firstAttribute="top" secondItem="fbV-q0-0EB" secondAttribute="topMargin" constant="4" id="wTt-eO-Uo3"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <segue destination="21l-es-THB" kind="show" identifier="toStarshipDetail" id="SCL-D2-6SR"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="obK-xC-6M8" id="ngO-BP-etb"/>
+                            <outlet property="delegate" destination="obK-xC-6M8" id="XOt-0y-cjr"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Choose your new Starship" id="zSY-i6-j6l">
+                        <barButtonItem key="backBarButtonItem" title=" " id="YFo-RU-vbp"/>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mFG-YC-Rik" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-348" y="169.56521739130437"/>
+        </scene>
+        <!--Title-->
+        <scene sceneID="SU6-t5-JqC">
+            <objects>
+                <viewController id="21l-es-THB" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hc5-2M-7du">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="CoQ-tm-s5B"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="vRm-ow-Dlx"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t4q-Kj-hEe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="477" y="174"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="pRd-0n-XFD">
+            <objects>
+                <navigationController id="xIH-Yg-CP0" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FpC-dx-yUH">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.50784188509999995" green="0.84911912680000001" blue="0.99967902900000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.50784188509999995" green="0.84911912680000001" blue="0.99967902900000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="obK-xC-6M8" kind="relationship" relationship="rootViewController" id="vAL-g4-alp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iVl-S1-kWj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1300" y="170"/>
+        </scene>
+    </scenes>
+</document>
