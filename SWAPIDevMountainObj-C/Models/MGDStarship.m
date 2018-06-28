@@ -40,21 +40,38 @@
     
     // take the returned JSON and parse it using the private keys created below to then take those values and create the MGDStarship object via the memberwise initializer created above.
     
-    NSDictionary *resultsdDictionary = dictionary[[MGDStarship resultsKey]];
     
-    NSString *name = resultsdDictionary[[MGDStarship nameKey]];
-    NSString *model = resultsdDictionary[[MGDStarship modelKey]];
-    NSString *manufacturer = resultsdDictionary[[MGDStarship manufacturerKey]];
-    NSString *costInCredits = resultsdDictionary[[MGDStarship costInCreditsKey]];
-    NSString *length = resultsdDictionary[[MGDStarship lengthKey]];
-    NSString *maxAtmospheringSpeed = resultsdDictionary[[MGDStarship maxAtmospheringSpeedKey]];
-    NSString *crew = resultsdDictionary[[MGDStarship crewKey]];
-    NSString *passengers = resultsdDictionary[[MGDStarship passengersKey]];
-    NSString *cargoCapacity = resultsdDictionary[[MGDStarship cargoCapacityKey]];
-    NSString *consumables = resultsdDictionary[[MGDStarship consumablesKey]];
-    NSString *hyperdriveRating = resultsdDictionary[[MGDStarship hyperdriveRatingKey]];
-    NSString *MGLT = resultsdDictionary[[MGDStarship MGLTKey]];
-    NSString *starshipClass = resultsdDictionary[[MGDStarship starshipClassKey]];
+        NSString *name = dictionary[[MGDStarship nameKey]];
+        NSString *model = dictionary[[MGDStarship modelKey]];
+        NSString *manufacturer = dictionary[[MGDStarship manufacturerKey]];
+        NSString *costInCredits = dictionary[[MGDStarship costInCreditsKey]];
+        NSString *length = dictionary[[MGDStarship lengthKey]];
+        NSString *maxAtmospheringSpeed = dictionary[[MGDStarship maxAtmospheringSpeedKey]];
+        NSString *crew = dictionary[[MGDStarship crewKey]];
+        NSString *passengers = dictionary[[MGDStarship passengersKey]];
+        NSString *cargoCapacity = dictionary[[MGDStarship cargoCapacityKey]];
+        NSString *consumables = dictionary[[MGDStarship consumablesKey]];
+        NSString *hyperdriveRating = dictionary[[MGDStarship hyperdriveRatingKey]];
+        NSString *MGLT = dictionary[[MGDStarship MGLTKey]];
+        NSString *starshipClass = dictionary[[MGDStarship starshipClassKey]];
+    
+    
+    
+//    NSDictionary *resultsdDictionary = dictionary[[MGDStarship resultsKey]];
+    
+//    NSString *name = resultsdDictionary[[MGDStarship nameKey]];
+//    NSString *model = resultsdDictionary[[MGDStarship modelKey]];
+//    NSString *manufacturer = resultsdDictionary[[MGDStarship manufacturerKey]];
+//    NSString *costInCredits = resultsdDictionary[[MGDStarship costInCreditsKey]];
+//    NSString *length = resultsdDictionary[[MGDStarship lengthKey]];
+//    NSString *maxAtmospheringSpeed = resultsdDictionary[[MGDStarship maxAtmospheringSpeedKey]];
+//    NSString *crew = resultsdDictionary[[MGDStarship crewKey]];
+//    NSString *passengers = resultsdDictionary[[MGDStarship passengersKey]];
+//    NSString *cargoCapacity = resultsdDictionary[[MGDStarship cargoCapacityKey]];
+//    NSString *consumables = resultsdDictionary[[MGDStarship consumablesKey]];
+//    NSString *hyperdriveRating = resultsdDictionary[[MGDStarship hyperdriveRatingKey]];
+//    NSString *MGLT = resultsdDictionary[[MGDStarship MGLTKey]];
+//    NSString *starshipClass = resultsdDictionary[[MGDStarship starshipClassKey]];
     
     return [self initWithName:name model:model manufacturer:manufacturer costInCredits:costInCredits length:length maxAtmospheringSpeed:maxAtmospheringSpeed crew:crew passengers:passengers cargoCapacity:cargoCapacity consumables:consumables hyperdriveRating:hyperdriveRating MGLT:MGLT starshipClass:starshipClass];
 }

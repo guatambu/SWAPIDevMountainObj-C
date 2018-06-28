@@ -14,6 +14,8 @@
 		FA12BB3E20E561C700A597DF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA12BB3D20E561C700A597DF /* main.m */; };
 		FA12BB4820E561C700A597DF /* SWAPIDevMountainObj_CTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA12BB4720E561C700A597DF /* SWAPIDevMountainObj_CTests.m */; };
 		FA12BB5A20E568E000A597DF /* MGDStarship.m in Sources */ = {isa = PBXBuildFile; fileRef = FA12BB5920E568E000A597DF /* MGDStarship.m */; };
+		FA12BB5D20E57B9E00A597DF /* MGDStarshipController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA12BB5C20E57B9E00A597DF /* MGDStarshipController.m */; };
+		FA12BB6020E58C4400A597DF /* MGDStarshipsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA12BB5F20E58C4400A597DF /* MGDStarshipsTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		FA12BB4920E561C700A597DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA12BB5820E568E000A597DF /* MGDStarship.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MGDStarship.h; sourceTree = "<group>"; };
 		FA12BB5920E568E000A597DF /* MGDStarship.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MGDStarship.m; sourceTree = "<group>"; };
+		FA12BB5B20E57B9E00A597DF /* MGDStarshipController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MGDStarshipController.h; sourceTree = "<group>"; };
+		FA12BB5C20E57B9E00A597DF /* MGDStarshipController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MGDStarshipController.m; sourceTree = "<group>"; };
+		FA12BB5E20E58C4400A597DF /* MGDStarshipsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MGDStarshipsTableViewController.h; sourceTree = "<group>"; };
+		FA12BB5F20E58C4400A597DF /* MGDStarshipsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MGDStarshipsTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +146,8 @@
 		FA12BB5620E563F000A597DF /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				FA12BB5E20E58C4400A597DF /* MGDStarshipsTableViewController.h */,
+				FA12BB5F20E58C4400A597DF /* MGDStarshipsTableViewController.m */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -147,6 +155,8 @@
 		FA12BB5720E563FB00A597DF /* Model Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				FA12BB5B20E57B9E00A597DF /* MGDStarshipController.h */,
+				FA12BB5C20E57B9E00A597DF /* MGDStarshipController.m */,
 			);
 			path = "Model Controllers";
 			sourceTree = "<group>";
@@ -253,6 +263,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA12BB5D20E57B9E00A597DF /* MGDStarshipController.m in Sources */,
+				FA12BB6020E58C4400A597DF /* MGDStarshipsTableViewController.m in Sources */,
 				FA12BB3E20E561C700A597DF /* main.m in Sources */,
 				FA12BB5A20E568E000A597DF /* MGDStarship.m in Sources */,
 				FA12BB3020E561C700A597DF /* AppDelegate.m in Sources */,
